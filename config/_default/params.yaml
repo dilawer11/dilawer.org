@@ -18,8 +18,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: 'Personal Website for Dilawer Ahmed'
+    twitter: 'DilawerAhmed11'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -43,12 +43,13 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Dilawer Ahmed'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
+  
 
 # Localization
 
@@ -66,9 +67,9 @@ features:
   math:
     enable: false
   privacy_pack:
-    enable: false
+    enable: true
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/dilawer11/dilawer.org'
     content_dir: content
     branch: main
   avatar:
@@ -112,3 +113,5 @@ extensions:
 security:
   # Allow frame for embedding speaker notes in slides
   allow_frame: true
+
+i_am_a_sponsor: true
