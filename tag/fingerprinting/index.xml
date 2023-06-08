@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fingerprinting | Dilawer Ahmed</title><link>https://dilawer.org/tag/fingerprinting/</link><atom:link href="https://dilawer.org/tag/fingerprinting/index.xml" rel="self" type="application/rss+xml"/><description>Fingerprinting</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Jul 2022 00:00:00 +0000</lastBuildDate><image><url>https://dilawer.org/media/icon_hu29bf17abadb4730b1b13a30c65b0ac16_107706_512x512_fill_lanczos_center_3.png</url><title>Fingerprinting</title><link>https://dilawer.org/tag/fingerprinting/</link></image><item><title>Analyzing the Feasibility and Generalizability of Fingerprinting Internet of Things Devices</title><link>https://dilawer.org/publication/pets22-iot-fingerprinting/</link><pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate><guid>https://dilawer.org/publication/pets22-iot-fingerprinting/</guid><description>&lt;p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fingerprinting | Dilawer Ahmed</title><link>https://dilawer.org/tag/fingerprinting/</link><atom:link href="https://dilawer.org/tag/fingerprinting/index.xml" rel="self" type="application/rss+xml"/><description>Fingerprinting</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 09 Aug 2023 00:00:00 +0000</lastBuildDate><image><url>https://dilawer.org/media/icon_hu29bf17abadb4730b1b13a30c65b0ac16_107706_512x512_fill_lanczos_center_3.png</url><title>Fingerprinting</title><link>https://dilawer.org/tag/fingerprinting/</link></image><item><title>Spying through your voice assistants: Realistic voice command fingerprinting</title><link>https://dilawer.org/publication/usenixsec23-va-fingerprinting/</link><pubDate>Wed, 09 Aug 2023 00:00:00 +0000</pubDate><guid>https://dilawer.org/publication/usenixsec23-va-fingerprinting/</guid><description>&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="logo.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;figure id="figure-the-voice-assistant-fingerprint-diagram">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="The Voice Assistant fingerprint diagram" srcset="
+/publication/usenixsec23-va-fingerprinting/process_diagram_hu0ea216603f47305fc9f82fb6cf54b619_242731_3fa2eeefc67090bc926eb1e35df717d4.webp 400w,
+/publication/usenixsec23-va-fingerprinting/process_diagram_hu0ea216603f47305fc9f82fb6cf54b619_242731_0e34ef6ad4ac067cf805de1a85ceaabb.webp 760w,
+/publication/usenixsec23-va-fingerprinting/process_diagram_hu0ea216603f47305fc9f82fb6cf54b619_242731_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://dilawer.org/publication/usenixsec23-va-fingerprinting/process_diagram_hu0ea216603f47305fc9f82fb6cf54b619_242731_3fa2eeefc67090bc926eb1e35df717d4.webp"
+width="760"
+height="210"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption data-pre="Figure&amp;nbsp;" data-post=":&amp;nbsp;" class="numbered">
+The Voice Assistant fingerprint diagram
+&lt;/figcaption>&lt;/figure>
+&lt;/p></description></item><item><title>Analyzing the Feasibility and Generalizability of Fingerprinting Internet of Things Devices</title><link>https://dilawer.org/publication/pets22-iot-fingerprinting/</link><pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate><guid>https://dilawer.org/publication/pets22-iot-fingerprinting/</guid><description>&lt;p>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
