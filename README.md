@@ -5,6 +5,6 @@ This repo contains the code for my personal academic website hosted at https://d
 ## Making changes
 
 The full documentation can be found here: https://wowchemy.com/docs/content/publications/
-
+    
 
 URL: dilawer.org
