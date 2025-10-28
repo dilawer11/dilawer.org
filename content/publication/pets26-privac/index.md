@@ -50,7 +50,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'PriVA-C.pdf'
+url_pdf: 'publication/pets26-privac/PriVA-C.pdf'
 url_code: 'https://github.com/dilawer11/priva-c'
 url_dataset: ''
 url_poster: ''
@@ -61,11 +61,11 @@ url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  placement: 2
-  caption: 'Similar devices have similar fingerprints'
-  focal_point: 'smart'
-  preview_only: true
+# image:
+#   placement: 2
+#   caption: 'Similar devices have similar fingerprints'
+#   focal_point: 'smart'
+#   preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -83,4 +83,5 @@ projects:
 # slides: example
 ---
 
+{{< figure src="featured.png" caption="PriVA-C Overview Diagram" numbered="true" >}}
 

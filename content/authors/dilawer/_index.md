@@ -10,12 +10,12 @@ last_name: Ahmed
 superuser: true
 
 # Role/position/tagline
-role: Phd Student
+role: PhD, Software Engineer
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: NC State University
-    url: https://www.ncsu.edu/
+  - name: Microsoft
+    url: https://microsoft.com
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -31,7 +31,7 @@ education:
   courses:
     - course: PhD in Computer Science
       institution: NC State University
-      year: 2025*
+      year: 2025
     - course: BS in Computer Science
       institution: Lahore University of Management Science (LUMS)
       year: 2020
@@ -74,6 +74,6 @@ social:
 highlight_name: true
 ---
 
-I am a PhD student advised by Dr. Anupam Das, at North Carolina State University. My research interests are in all things Security and Privacy with a focus on IoT and Web Security. I am also a member of the Wolfpack Security and Privacy Lab (WSPR). Previously, I graduated from BS Computer Science from Lahore University of Management Sciences class of 2020.
+I am a Software Engineer at Microsoft, where I apply my expertise in security and privacy to build robust systems. I recently completed my PhD in Computer Science at North Carolina State University, advised by Dr. Anupam Das, where my research focused on Security and Privacy with an emphasis on IoT and Web Security as part of the Wolfpack Security and Privacy Lab (WSPR). I hold a BS in Computer Science from Lahore University of Management Sciences, class of 2020.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}Resume{{< /staticref >}}.

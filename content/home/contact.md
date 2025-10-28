@@ -29,8 +29,8 @@ content:
   phone: +1 (nine 84) three 89 376 seven
   address:
     # street: 450 Serra Mall
-    city: Raleigh
-    region: NC
+    city: Mountain View
+    region: CA
     # postcode: '94305'
     country: United States
     country_code: US

@@ -22,11 +22,31 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Software Engineer II
+    company: Microsoft
+    company_url: 'https://microsoft.com'
+    company_logo: microsoft
+    location: Mountain View, CA
+    date_start: '2025-08-18'
+    # date_end: 'Present'
+    description: |2-
+  
+  - title: Software Engineer Intern
+    company: Microsoft
+    company_url: 'https://microsoft.com'
+    company_logo: microsoft
+    location: Redmond, WA
+    date_start: '2024-05-14'
+    date_end: '2024-08-19'
+    description: |2-
+        * Revamped offline Big Data processing pipeline in Azure Data Lake to optimize for location processing and increased recall by upto 50% increase Ad revenue in certain cases by 350%
+        * Developed and deployed into production C++ online implementation to improve Ad delivery based on location. Wrote unit tests that increased code coverage and created comprehensive End-to-end testing
+        * Migrated location processing pipeline away from radius based using Reverse Geocoding in collaboration with Bing Maps team. Saved 87% compute resources while increasing coverage by 25%
   - title: Software Engineer Intern
     company: Google
     company_url: 'https://google.com'
     company_logo: google
-    location: California
+    location: Sunnyvale, CA
     date_start: '2022-05-14'
     date_end: '2022-08-19'
     description: |2-
