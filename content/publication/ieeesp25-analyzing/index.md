@@ -73,7 +73,7 @@ url_video: ''
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - va fingerprinting
+  - voice-assistant-security
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -82,5 +82,4 @@ projects:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
 

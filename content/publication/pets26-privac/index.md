@@ -73,7 +73,7 @@ url_video: ''
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - va fingerprinting
+  - voice-assistant-security
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -84,4 +84,3 @@ projects:
 ---
 
 {{< figure src="featured.png" caption="PriVA-C Overview Diagram" numbered="true" >}}
-

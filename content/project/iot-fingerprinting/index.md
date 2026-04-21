@@ -1,6 +1,6 @@
 ---
-title: IoT Fingerprinting
-summary: Understanding and reducing information leakage from IoT devices through network based channels.
+title: IoT Privacy & Device Fingerprinting
+summary: Understanding how encrypted traffic reveals device identity and usage patterns, and designing measurements that better capture open-world privacy risk in IoT ecosystems.
 tags:
   - IoT
   - Fingerprinting
@@ -31,3 +31,13 @@ url_video: ''
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
+
+This project covers my work on the privacy implications of identifying IoT devices from encrypted network traffic. Rather than treating device fingerprinting as a narrow closed-world classification problem, the work examines how well these attacks generalize across datasets, manufacturers, and open-world conditions.
+
+Key threads in this area include:
+
+- **Large-scale device fingerprinting** across a broad and diverse IoT device set
+- **Open-world analysis** that better reflects what a realistic attacker would face
+- **Privacy framing** around what device ownership and behavior leaks can reveal about users
+
+The goal has been to connect strong empirical results with the broader privacy story: even encrypted traffic can expose surprisingly rich information about people through the devices they use.

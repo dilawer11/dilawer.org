@@ -18,7 +18,7 @@ organizations:
     url: https://microsoft.com
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: I work on security, privacy, and production systems, with a focus on voice assistants, IoT, and web platforms.
 
 # Interests to show in About widget
 interests:
@@ -74,6 +74,6 @@ social:
 highlight_name: true
 ---
 
-I am a Software Engineer at Microsoft, where I apply my expertise in security and privacy to build robust systems. I recently completed my PhD in Computer Science at North Carolina State University, advised by Dr. Anupam Das, where my research focused on Security and Privacy with an emphasis on IoT and Web Security as part of the Wolfpack Security and Privacy Lab (WSPR). I hold a BS in Computer Science from Lahore University of Management Sciences, class of 2020.
+I am a Software Engineer II at Microsoft AI, where I build web features, including enhanced page features, web document features for grounding models, and URL normalization systems that improve resource consumption and deduplication. I recently completed my PhD in Computer Science at North Carolina State University, advised by Dr. Anupam Das, where my research focused on security and privacy with an emphasis on IoT, voice assistants, and the web as part of the Wolfpack Security and Privacy Lab (WSPR). I hold a BS in Computer Science from Lahore University of Management Sciences, class of 2020.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}Resume{{< /staticref >}}.
+[Resume](/uploads/resume.pdf)

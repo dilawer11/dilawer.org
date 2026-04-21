@@ -1,11 +1,12 @@
 # IDEs
 .idea/
 
-# Hugo
-resources/
-public/
-jsconfig.json
+# Node / Next.js
 node_modules/
-go.sum
-.hugo_build.lock
-hugo
+web/node_modules/
+web/.next/
+web/out/
+
+# Misc
+.DS_Store
+*.tsbuildinfo

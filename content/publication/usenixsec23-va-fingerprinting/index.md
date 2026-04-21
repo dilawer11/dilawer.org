@@ -93,7 +93,7 @@ url_video: ''
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - va fingerprinting
+  - voice-assistant-security
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -105,4 +105,3 @@ projects:
 
 {{< figure src="logo.png" caption="" numbered="false" >}}
 {{< figure src="process_diagram.png" caption="The Voice Assistant fingerprint diagram" numbered="true" >}}
-

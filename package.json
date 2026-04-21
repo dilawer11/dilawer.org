@@ -1,0 +1,10 @@
+{
+  "name": "dilawer-org",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "lint": "npm --prefix web run lint",
+    "sync:assets": "npm --prefix web run sync:assets"
+  }
+}
