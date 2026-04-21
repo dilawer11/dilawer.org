@@ -160,10 +160,17 @@ h6 {
 }
 
 .pill-link {
+  gap: 0.45rem;
   padding: 0.62rem 0.85rem;
   border: 1px solid var(--border);
   background: var(--panel-strong);
   font-size: 0.82rem;
+}
+
+.pill-link svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: 0 0 auto;
 }
 
 .button:hover,
@@ -352,6 +359,41 @@ h6 {
 .timeline-card h3,
 .entry-card h3 {
   font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+}
+
+.timeline-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.timeline-logo {
+  display: grid;
+  place-items: center;
+  width: 2.9rem;
+  height: 2.9rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(180, 35, 24, 0.08), transparent 70%),
+    var(--panel);
+  color: var(--accent-strong);
+}
+
+.timeline-logo svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.experience-logo-image {
+  width: 1.55rem;
+  height: 1.55rem;
+  object-fit: contain;
+}
+
+.timeline-heading {
+  min-width: 0;
 }
 
 .timeline-company {

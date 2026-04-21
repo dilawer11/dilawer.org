@@ -10,11 +10,11 @@ last_name: Ahmed
 superuser: true
 
 # Role/position/tagline
-role: PhD, Software Engineer
+role: Microsoft AI
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Microsoft
+  - name: Microsoft AI
     url: https://microsoft.com
 
 # Short bio (displayed in user profile at end of posts)
@@ -29,7 +29,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Computer Science
+    - course: PhD, Computer Science
       institution: NC State University
       year: 2025
     - course: BS in Computer Science

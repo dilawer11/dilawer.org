@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { EntryCard } from "@/components/entry-card";
+import { ExperienceLogo } from "@/components/experience-logo";
+import { SocialIcon } from "@/components/social-icon";
 import { siteData } from "@/lib/site-data";
 import {
   getAuthorProfile,
@@ -52,22 +54,15 @@ export default async function Home() {
               />
             ) : null}
             <h3>{author.title}</h3>
-            <p className="profile-role">{author.role}</p>
-            <ul className="meta-list">
-              {author.organizations.map((organization) => (
-                <li key={organization.name}>
-                  {organization.url ? (
-                    <a href={organization.url}>{organization.name}</a>
-                  ) : (
-                    organization.name
-                  )}
-                </li>
-              ))}
-            </ul>
+            {author.role ? <p className="profile-role">{author.role}</p> : null}
+            {author.education[0]?.course ? (
+              <p className="profile-role">{author.education[0].course}</p>
+            ) : null}
             <div className="pill-row">
               {author.social.map((social) => (
                 <a key={`${social.icon}-${social.link}`} className="pill-link" href={social.link}>
-                  {social.label}
+                  <SocialIcon name={social.icon} />
+                  <span>{social.label}</span>
                 </a>
               ))}
             </div>
@@ -100,18 +95,25 @@ export default async function Home() {
         <div className="timeline">
           {experienceSection.items.map((item) => (
             <article className="timeline-card" key={`${item.company}-${item.title}-${item.dateStart}`}>
-              <p className="timeline-meta">
-                {item.dateLabel}
-                {item.location ? ` · ${item.location}` : ""}
-              </p>
-              <h3>{item.title}</h3>
-              <p className="timeline-company">
-                {item.companyUrl ? (
-                  <a href={item.companyUrl}>{item.company}</a>
-                ) : (
-                  item.company
-                )}
-              </p>
+              <div className="timeline-header">
+                <div className="timeline-logo" aria-hidden="true">
+                  <ExperienceLogo company={item.company} />
+                </div>
+                <div className="timeline-heading">
+                  <p className="timeline-meta">
+                    {item.dateLabel}
+                    {item.location ? ` · ${item.location}` : ""}
+                  </p>
+                  <h3>{item.title}</h3>
+                  <p className="timeline-company">
+                    {item.companyUrl ? (
+                      <a href={item.companyUrl}>{item.company}</a>
+                    ) : (
+                      item.company
+                    )}
+                  </p>
+                </div>
+              </div>
               {item.descriptionHtml ? (
                 <div
                   className="prose-block"
