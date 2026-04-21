@@ -31,7 +31,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
+    <html lang="en" className={`${sans.variable} ${mono.variable}`} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                try {
+                  var storedTheme = window.localStorage.getItem("theme");
+                  var theme = storedTheme === "light" || storedTheme === "dark"
+                    ? storedTheme
+                    : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                  document.documentElement.dataset.theme = theme;
+                } catch (error) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body>
         <SiteHeader />
         <main className="site-shell">{children}</main>

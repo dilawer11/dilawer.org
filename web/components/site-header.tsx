@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
   { href: "/#focus", label: "Focus" },
@@ -15,13 +16,16 @@ export function SiteHeader() {
         <Link href="/" className="site-title">
           Dilawer Ahmed
         </Link>
-        <nav className="site-nav" aria-label="Primary">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href}>
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="site-header-actions">
+          <nav className="site-nav" aria-label="Primary">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href}>
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );
