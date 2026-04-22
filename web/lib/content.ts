@@ -115,7 +115,7 @@ async function getCollectionEntries(
       const parsed = await parseMarkdownFile(filePath);
       const data = parsed.data as Frontmatter;
       const assetDir = path.dirname(filePath);
-      const dateValue = parseDate(stringValue(data.date) ?? stringValue(data.publishDate));
+      const dateValue = dateValueOf(data.date) ?? dateValueOf(data.publishDate);
       const authors = stringArray(data.authors).map(
         (author) => authorMap.get(author) ?? author,
       );
@@ -312,8 +312,6 @@ function formatDate(date?: Date) {
   }
 
   return new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "numeric",
     year: "numeric",
   }).format(date);
 }
@@ -324,6 +322,14 @@ function parseDate(value?: string) {
   }
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? undefined : date;
+}
+
+function dateValueOf(value: unknown) {
+  if (value instanceof Date) {
+    return Number.isNaN(value.getTime()) ? undefined : value;
+  }
+
+  return typeof value === "string" ? parseDate(value) : undefined;
 }
 
 function socialLabel(icon: string) {

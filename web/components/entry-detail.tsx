@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { JSX } from "react";
 import { formatEntryMeta } from "@/components/entry-meta";
 import { LinkPills } from "@/components/link-pills";
+import { PublicationMeta } from "@/components/publication-meta";
 import type { ContentEntry } from "@/lib/content";
 
 type EntryDetailProps = {
@@ -25,7 +26,11 @@ export function EntryDetail({
           </Link>
           <p className="eyebrow">{entry.kind}</p>
           <h1>{entry.title}</h1>
-          <p className="section-copy">{formatEntryMeta(entry, "detail")}</p>
+          {entry.kind === "publication" ? (
+            <PublicationMeta entry={entry} />
+          ) : (
+            <p className="section-copy">{formatEntryMeta(entry, "detail")}</p>
+          )}
           <LinkPills links={entry.links} />
         </div>
       </section>

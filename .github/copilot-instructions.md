@@ -5,6 +5,7 @@
 - **Local preview:** `npm run dev`
 - **Local production build:** `npm run build`
 - **Lint:** `npm run lint`
+- **Publication sync:** `npm run sync:dblp`
 - **App-specific commands:** `cd web && npm run dev|build|lint`
 
 ## Architecture
@@ -18,6 +19,7 @@
   - `content/project/<slug>/` for projects
 - Page bundles keep `index.md` beside related assets such as `cite.bib`, `featured.png`, PDFs, or diagrams.
 - The Next app syncs non-Markdown assets from `content/`, `assets/media/`, and `static/` into `web/public/` before build via `web/scripts/sync-source-assets.mjs`.
+- Publication metadata can be refreshed from external sources with `web/scripts/sync-dblp.mjs`, which uses DBLP as the primary source and OpenAlex for enrichment while preserving local project links and manual-only entries.
 - Homepage structure and copy now live in Next-native code/data under `web/app/` and `web/lib/site-data.ts`, not in Hugo widget config.
 - Deployment happens from `main` through `.github/workflows/gh-pages.yml`, which builds `web/` and publishes `web/out`.
 

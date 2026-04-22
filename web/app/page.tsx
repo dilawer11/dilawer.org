@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { EntryCard } from "@/components/entry-card";
 import { ExperienceLogo } from "@/components/experience-logo";
+import { PublicationList } from "@/components/publication-list";
 import { SocialIcon } from "@/components/social-icon";
 import { siteData } from "@/lib/site-data";
 import {
@@ -158,15 +159,7 @@ export default async function Home() {
             Browse all publications
           </Link>
         </div>
-        <div className="card-grid">
-          {latestPublications.map((publication) => (
-            <EntryCard
-              key={publication.slug}
-              entry={publication}
-              href={`/publications/${publication.slug}/`}
-            />
-          ))}
-        </div>
+        <PublicationList entries={latestPublications} showSummary={false} />
       </section>
 
       <section className="section-card" id="contact">

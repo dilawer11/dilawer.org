@@ -437,6 +437,51 @@ h6 {
   padding: 1.15rem;
 }
 
+.publication-list {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+.card-grid > .publication-list {
+  grid-column: 1 / -1;
+}
+
+.publication-list-item {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.publication-list-compact .publication-list-item {
+  gap: 0;
+  padding: 0.95rem 0;
+}
+
+.publication-list-item h3 {
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.publication-list .entry-summary {
+  max-width: 62rem;
+}
+
+.entry-meta em,
+.entry-meta strong {
+  color: var(--text);
+}
+
+.entry-meta em {
+  font-style: italic;
+}
+
+.entry-meta strong {
+  font-weight: 800;
+}
+
 .entry-card p,
 .entry-detail p,
 .prose-block {

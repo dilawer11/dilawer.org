@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "sync:assets": "node ./scripts/sync-source-assets.mjs",
+    "sync:dblp": "node ./scripts/sync-dblp.mjs",
     "predev": "npm run sync:assets",
     "dev": "next dev",
     "prebuild": "npm run sync:assets",
@@ -13,6 +14,7 @@
   },
   "dependencies": {
     "fast-glob": "^3.3.3",
+    "fast-xml-parser": "^4.5.1",
     "gray-matter": "^4.0.3",
     "next": "16.2.4",
     "react": "19.2.4",
