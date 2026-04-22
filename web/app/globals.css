@@ -97,7 +97,7 @@ h6 {
 .site-shell {
   width: min(1140px, calc(100vw - 1.25rem));
   margin: 0 auto;
-  padding: 0.9rem 0 2rem;
+  padding: 0.9rem 0 1rem;
 }
 
 .page-stack,
@@ -348,7 +348,7 @@ h6 {
 }
 
 .contact-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .contact-grid .copy-card {
@@ -695,14 +695,13 @@ h6 {
 .site-footer {
   width: min(1140px, calc(100vw - 1.25rem));
   margin: 0 auto 2rem;
+  color: var(--muted);
+  text-align: center;
 }
 
-.site-footer-inner {
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: transparent;
-  text-align: center;
+.footer-copy {
+  font-size: 0.92rem;
+  line-height: 1.6;
 }
 
 .prose-block p + p,

@@ -174,10 +174,6 @@ export default async function Home() {
             <p>{contact.email}</p>
           </div>
           <div className="copy-card info-card">
-            <p className="eyebrow">Phone</p>
-            <p>{contact.phone}</p>
-          </div>
-          <div className="copy-card info-card">
             <p className="eyebrow">Location</p>
             <p>
               {contact.address.city}, {contact.address.region}

@@ -21,7 +21,6 @@ type FocusItem = {
 
 type ContactData = SectionIntro & {
   email: string;
-  phone: string;
   address: {
     city: string;
     region: string;
@@ -109,7 +108,6 @@ export const siteData: SiteData = {
       subtitle:
         "Based in Mountain View and open to conversations about security, privacy, applied research, and engineering leadership.",
       email: "dilawer11@gmail.com",
-      phone: "+1 (nine 84) three 89 376 seven",
       address: {
         city: "Mountain View",
         region: "CA",
