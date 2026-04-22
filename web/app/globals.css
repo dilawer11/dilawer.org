@@ -230,7 +230,8 @@ h6 {
 .section-heading + .about-grid,
 .section-heading + .timeline,
 .section-heading + .contact-grid,
-.section-heading-inline + .card-grid {
+.section-heading-inline + .card-grid,
+.section-heading-inline + .publication-list {
   margin-top: clamp(1.15rem, 2vw, 1.6rem);
 }
 
@@ -249,6 +250,12 @@ h6 {
 .site-title,
 .entry-links a {
   color: var(--accent-strong);
+}
+
+.button.section-link {
+  align-self: flex-end;
+  color: var(--text);
+  border-radius: 16px;
 }
 
 .section-link,

@@ -133,7 +133,7 @@ export default async function Home() {
             <h2>{projectsSection.title}</h2>
             <p className="section-copy">{projectsSection.subtitle}</p>
           </div>
-          <Link className="section-link" href="/projects/">
+          <Link className="button button-secondary section-link" href="/projects/">
             View all projects
           </Link>
         </div>
@@ -155,7 +155,7 @@ export default async function Home() {
             <h2>{publicationsSection.title}</h2>
             <p className="section-copy">{publicationsSection.subtitle}</p>
           </div>
-          <Link className="section-link" href="/publications/">
+          <Link className="button button-secondary section-link" href="/publications/">
             Browse all publications
           </Link>
         </div>
