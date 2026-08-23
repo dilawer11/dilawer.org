@@ -22,6 +22,18 @@ export default async function Home() {
 
   const selectedProjects = projects.slice(0, 6);
   const latestPublications = publications.slice(0, publicationsSection.count ?? 4);
+  const impactMetrics = [
+    {
+      value: publications.length.toString().padStart(2, "0"),
+      label: "Publications",
+    },
+    {
+      value: projects.length.toString().padStart(2, "0"),
+      label: "Projects",
+    },
+    { value: "87%", label: "Compute cost reduction" },
+    { value: "Up to 50%", label: "Pipeline recall improvement" },
+  ];
 
   return (
     <div className="page-stack">
@@ -37,6 +49,17 @@ export default async function Home() {
             {hero.ctaAltLabel}
           </Link>
         </div>
+      </section>
+
+      <section className="impact-strip section-card" aria-label="Selected impact">
+        <dl className="impact-list">
+          {impactMetrics.map((metric) => (
+            <div className="impact-item" key={metric.label}>
+              <dt>{metric.value}</dt>
+              <dd>{metric.label}</dd>
+            </div>
+          ))}
+        </dl>
       </section>
 
       <section className="section-card" id="focus">
