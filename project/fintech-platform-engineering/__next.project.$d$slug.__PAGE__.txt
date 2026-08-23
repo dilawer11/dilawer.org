@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[98491,["/_next/static/chunks/0z67h4wvlktkj.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0k8mmmuivz1go.js"],"LegacyRedirect"]
-3:I[97367,["/_next/static/chunks/0z67h4wvlktkj.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+2:I[98491,["/_next/static/chunks/0~qk~gpp9~21r.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/02hufb7yr942p.js"],"LegacyRedirect"]
+3:I[97367,["/_next/static/chunks/0~qk~gpp9~21r.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"to":"/projects/fintech-platform-engineering/","title":"Fintech Platform Engineering"}],[["$","script","script-0",{"src":"/_next/static/chunks/0k8mmmuivz1go.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"KwCafM3-wIgefS4ufl3Ex"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"to":"/projects/fintech-platform-engineering/","title":"Fintech Platform Engineering"}],[["$","script","script-0",{"src":"/_next/static/chunks/02hufb7yr942p.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"S93i44Vlp_g_JhtM59Vl0"}
 5:null
