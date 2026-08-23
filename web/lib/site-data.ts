@@ -61,7 +61,7 @@ export const siteData: SiteData = {
     hero: {
       title: "Security and privacy research, built for real systems.",
       bodyHtml:
-        "<p>I’m <strong>Dilawer Ahmed</strong>, a software engineer at <strong>Microsoft AI</strong> and a researcher focused on <strong>security</strong>, <strong>privacy</strong>, and <strong>production systems</strong>. My work spans voice assistants, IoT measurement, web privacy, and the infrastructure required to turn research ideas into deployable systems.</p>",
+        "<p>I’m <strong>Dilawer Ahmed</strong>, a software engineer at <strong>Microsoft AI</strong> and a <strong>security and privacy researcher</strong>. I build production systems and study how real platforms expose—and can better protect—people and data.</p>",
       ctaLabel: "Explore Publications",
       ctaUrl: "/publications/",
       ctaAltLabel: "View Resume",
@@ -71,7 +71,7 @@ export const siteData: SiteData = {
     focus: {
       title: "What I work on",
       subtitle:
-        "A quick view of the engineering, research, and academic threads that shape my work.",
+        "Applied AI infrastructure, security measurement, and privacy research across voice assistants, IoT, and the web.",
       items: [
         {
           eyebrow: "Current work",

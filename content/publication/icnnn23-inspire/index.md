@@ -46,6 +46,7 @@ abstract: >-
   INSPIRE achieves relatively 1.76 times higher counting accuracy and 31.61%
   higher object detection mean average precision.
 summary: The wide spread of vehicular cameras has raised broad privacy concerns.
+topic: Privacy-Preserving ML
 tags: []
 categories: []
 featured: false
@@ -68,4 +69,3 @@ dblp_key: conf/icccn/LiYDZGWZSAZ23
 openalex_id: 'https://openalex.org/W4386361567'
 source: dblp
 ---
-

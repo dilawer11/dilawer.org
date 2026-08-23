@@ -49,7 +49,11 @@ export type ContentEntry = {
   title: string;
   summary?: string;
   subtitle?: string;
+  role?: string;
+  outcome?: string;
+  topic?: string;
   date?: Date;
+  year?: number;
   dateLabel?: string;
   bodyHtml: string;
   featured: boolean;
@@ -132,7 +136,11 @@ async function getCollectionEntries(
           stringValue(data.abstract) ??
           stringValue(data.subtitle),
         subtitle: stringValue(data.subtitle),
+        role: stringValue(data.role),
+        outcome: stringValue(data.outcome),
+        topic: stringValue(data.topic),
         date: dateValue,
+        year: dateValue?.getUTCFullYear(),
         dateLabel: formatDate(dateValue),
         bodyHtml: await markdownToHtml(parsed.content, assetDir),
         featured: booleanValue(data.featured),

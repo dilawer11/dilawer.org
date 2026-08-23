@@ -1,6 +1,8 @@
 ---
 title: Fintech Platform Engineering
 summary: Building and leading full-stack product systems for a fintech startup, including user, merchant, and admin experiences on a shared platform foundation.
+role: CTO & Product Engineering Lead
+outcome: Shipped a shared platform for customers, merchants, and internal operators.
 tags:
   - Fintech
   - Product

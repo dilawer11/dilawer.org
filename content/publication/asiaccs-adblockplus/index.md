@@ -50,6 +50,7 @@ summary: >-
   over the years in terms of both contents unblocked and partners/entities
   enrolled into the Acceptable Ads initiative, but also the privacy implications
   of enabling the exception list by default
+topic: Web Privacy
 tags:
   - Privacy
   - Web
@@ -75,4 +76,3 @@ dblp_key: conf/asiaccs/ZafarSA021
 openalex_id: 'https://openalex.org/W3166855174'
 source: dblp
 ---
-

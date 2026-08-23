@@ -42,6 +42,7 @@ summary: >-
   potential for more growth with large language model-powered assistants, as
   well as the introduction of “advertising ID” within Alexa, it is inevitable
   that advertisements (ads) will become prevalent on...
+topic: Voice Assistants
 tags:
   - IoT
   - Fingerprinting
@@ -64,4 +65,3 @@ dblp_key: conf/sp/SabirBA025
 openalex_id: 'https://openalex.org/W4411337349'
 source: dblp
 ---
-

@@ -20,13 +20,15 @@ export function EntryCard({ entry, href }: EntryCardProps): JSX.Element {
         </Link>
       ) : null}
       <div className="entry-card-content">
-        <p className="entry-meta">{meta}</p>
+        {entry.role ? <p className="entry-role">{entry.role}</p> : null}
         <h3>
           <Link className="entry-title" href={href}>
             {entry.title}
           </Link>
         </h3>
+        {entry.outcome ? <p className="entry-outcome">{entry.outcome}</p> : null}
         {entry.summary ? <p className="entry-summary">{entry.summary}</p> : null}
+        <p className="entry-meta">{meta}</p>
       </div>
     </article>
   );

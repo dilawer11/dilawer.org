@@ -1,6 +1,8 @@
 ---
 title: Cloud GPU Systems
 summary: Tooling and systems work for reasoning about remote GPU performance, virtualization, and infrastructure behavior in ML-oriented cloud environments.
+role: Software Engineering Intern, Google
+outcome: Built C++ simulation tooling for reasoning about remote GPU performance.
 tags:
   - Cloud
   - GPU

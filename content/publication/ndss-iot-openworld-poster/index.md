@@ -38,6 +38,7 @@ effectively an attacker can fingerprint unseen targeted IoT devices
 when building a classifier using either devices manufactured by
 the same company or devices with similar functionality"
 
+topic: IoT Privacy
 tags: 
  - IoT
  - Fingerprinting

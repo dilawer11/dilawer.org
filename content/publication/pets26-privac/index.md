@@ -32,6 +32,7 @@ abstract: >-
 summary: >-
   Voice assistants have become ubiquitous, yet they remain vulnerable to network
   traffic fingerprinting attacks that can expose sensitive user information.
+topic: Voice Assistants
 tags:
   - IoT
   - Fingerprinting

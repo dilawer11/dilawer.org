@@ -1,20 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { type ReactElement, useEffect, useRef, useState } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
-  { href: "/#focus", label: "Focus" },
-  { href: "/#experience", label: "Experience" },
-  { href: "/#projects", label: "Projects" },
-  { href: "/publications/", label: "Publications" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/#focus", label: "Focus", sectionId: "focus" },
+  { href: "/#experience", label: "Experience", sectionId: "experience" },
+  { href: "/#projects", label: "Projects", sectionId: "projects", pathPrefix: "/projects" },
+  {
+    href: "/publications/",
+    label: "Publications",
+    sectionId: "publications",
+    pathPrefix: "/publications",
+  },
+  { href: "/#contact", label: "Contact", sectionId: "contact" },
 ];
 
-export function SiteHeader() {
+function isPathActive(pathname: string, pathPrefix?: string): boolean {
+  if (!pathPrefix) {
+    return false;
+  }
+
+  return pathname === pathPrefix || pathname.startsWith(`${pathPrefix}/`);
+}
+
+export function SiteHeader(): ReactElement {
+  const pathname = usePathname();
+  const isHomepage = pathname === "/";
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>();
   const isScrolledRef = useRef(false);
 
   useEffect(() => {
@@ -70,6 +87,38 @@ export function SiteHeader() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!isHomepage) {
+      return;
+    }
+
+    const sections = navLinks
+      .map((link) => document.getElementById(link.sectionId))
+      .filter((section): section is HTMLElement => Boolean(section));
+    const visibleSections = new Map<string, IntersectionObserverEntry>();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleSections.set(entry.target.id, entry);
+          } else {
+            visibleSections.delete(entry.target.id);
+          }
+        });
+
+        const nearestSection = [...visibleSections.values()].sort(
+          (left, right) =>
+            Math.abs(left.boundingClientRect.top) - Math.abs(right.boundingClientRect.top),
+        )[0];
+        setActiveSection(nearestSection?.target.id);
+      },
+      { rootMargin: "-24% 0px -58%", threshold: 0 },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [isHomepage]);
+
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
@@ -83,16 +132,27 @@ export function SiteHeader() {
           Dilawer Ahmed
         </Link>
         <nav className="site-nav" id="site-primary-nav" aria-label="Primary">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={link.href === "/#focus" ? "site-nav-link site-nav-link-mobile-hidden" : "site-nav-link"}
-              onClick={closeMenu}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = isHomepage
+              ? activeSection === link.sectionId
+              : isPathActive(pathname, link.pathPrefix);
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={
+                  link.sectionId === "focus"
+                    ? "site-nav-link site-nav-link-mobile-hidden"
+                    : "site-nav-link"
+                }
+                aria-current={isActive ? "location" : undefined}
+                onClick={closeMenu}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
         <div className="site-header-controls">
           <button
@@ -114,7 +174,7 @@ export function SiteHeader() {
   );
 }
 
-function MenuIcon() {
+function MenuIcon(): ReactElement {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
       <path d="M4 7.25h16M4 12h16M4 16.75h16" />
@@ -122,7 +182,7 @@ function MenuIcon() {
   );
 }
 
-function CloseIcon() {
+function CloseIcon(): ReactElement {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
       <path d="m6 6 12 12M18 6 6 18" />

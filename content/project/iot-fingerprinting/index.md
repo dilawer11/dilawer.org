@@ -1,6 +1,8 @@
 ---
 title: IoT Privacy & Device Fingerprinting
 summary: Understanding how encrypted traffic reveals device identity and usage patterns, and designing measurements that better capture open-world privacy risk in IoT ecosystems.
+role: Security & Privacy Researcher
+outcome: Tested encrypted-traffic fingerprinting under realistic open-world conditions.
 tags:
   - IoT
   - Fingerprinting

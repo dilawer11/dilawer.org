@@ -38,6 +38,7 @@ summary: >-
   which temporal, spatial and data-collection- methodology differences impact
   fingerprinting accuracy. Our analysis sheds light on features that are more
   ro- bust against varying conditions
+topic: IoT Privacy
 tags:
   - IoT
   - Fingerprinting
