@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Manrope } from "next/font/google";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
@@ -53,6 +54,7 @@ export default function RootLayout({
         <SiteHeader />
         <main className="site-shell">{children}</main>
         <SiteFooter />
+        <ScrollReveal />
       </body>
     </html>
   );

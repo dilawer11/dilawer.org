@@ -1,6 +1,8 @@
 ---
 title: Voice Assistant Security & Privacy
 summary: Measuring, attacking, and defending modern voice assistant ecosystems, from traffic fingerprinting to scalable policy analysis and deployable defenses.
+role: Security & Privacy Researcher
+outcome: Measured cross-platform leakage and built a deployable traffic-analysis defense.
 tags:
   - Voice Assistant
   - Privacy

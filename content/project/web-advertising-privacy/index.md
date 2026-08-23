@@ -1,6 +1,8 @@
 ---
 title: Web Advertising & Privacy Controls
 summary: Studying how advertising ecosystems, exception lists, and privacy tools interact in practice, with a focus on the real privacy cost of defaults.
+role: Web Privacy Researcher
+outcome: Exposed the tracking cost hidden in ad-blocking exceptions and defaults.
 tags:
   - Web
   - Privacy

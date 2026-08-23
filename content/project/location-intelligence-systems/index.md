@@ -1,6 +1,8 @@
 ---
 title: Location Intelligence Systems
 summary: Production engineering for large-scale location processing, delivery, and ranking systems, with a focus on reliability, quality, and computational efficiency.
+role: Software Engineer, Microsoft
+outcome: Cut compute cost by 87% while increasing coverage by 25%.
 tags:
   - Systems
   - Location

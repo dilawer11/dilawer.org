@@ -1,6 +1,8 @@
 ---
 title: Privacy-preserving Vision Systems
 summary: Designing transformations that preserve utility in camera and video data while making re-identification and leakage substantially harder.
+role: Privacy & Computer Vision Researcher
+outcome: Preserved downstream utility while reducing re-identification risk.
 tags:
   - Privacy
   - Computer Vision

@@ -15,7 +15,7 @@ export default async function ProjectsPage() {
     <CollectionPage
       eyebrow="Projects"
       title="Selected Work"
-      description="Projects currently migrated from the existing Hugo content tree."
+      description="Research and production systems spanning privacy, infrastructure, applied ML, and product engineering."
     >
       {projects.map((project) => (
         <EntryCard key={project.slug} entry={project} href={`/projects/${project.slug}/`} />

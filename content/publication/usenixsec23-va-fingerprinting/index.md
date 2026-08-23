@@ -36,6 +36,7 @@ summary: >-
   remotely mixed with traffic from other devices. Adding additional features
   such as flow and burst based features can also increase fingerprinting
   performance
+topic: Voice Assistants
 tags:
   - IoT
   - Fingerprinting

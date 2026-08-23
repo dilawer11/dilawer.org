@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
-import { PublicationList } from "@/components/publication-list";
+import { PublicationExplorer } from "@/components/publication-explorer";
 import { getPublications } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -15,9 +15,9 @@ export default async function PublicationsPage() {
     <CollectionPage
       eyebrow="Research"
       title="Publications"
-      description="Conference papers, posters, and research outputs sourced from the existing repository content."
+      description="Conference papers, posters, and research outputs across security, privacy, and real-world systems."
     >
-      <PublicationList entries={publications} />
+      <PublicationExplorer entries={publications} />
     </CollectionPage>
   );
 }
